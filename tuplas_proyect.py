@@ -1,8 +1,16 @@
+from os import system
 import random
+
 options=('piedra','papel','tijera')
 
-user_option= input("piedra, papel o tijera => ")
+user_option= input("piedra, papel o tijera ? => ")
 user_option=user_option.lower()
+
+while not user_option in options:
+    system("cls")
+    print("esta opción no es valida")
+    user_option= input("piedra, papel o tijera ? => ")
+    user_option=user_option.lower()
 computer_option=random.choice(options)
 
 print('User Option =>', user_option)
