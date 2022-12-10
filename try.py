@@ -8,7 +8,7 @@ except ZeroDivisionError as error:
 try:
     assert 1!=1,'Uno no es igual a uno'
 except AssertionError as error:
-    print(error)
+    print("error")
 
 #Nos pasamos el error por las bolas
 try:
