@@ -1,4 +1,4 @@
-file = open('./leer archivo/text.txt','r')
+file = open('./read_documents/text.txt','r')
 #Lectura automatica
 #print(file.read())
 #Lectura manual
@@ -16,7 +16,7 @@ file.close() """
 
 #Esta sentencia cierra el archivo automaticamente al finalizar el bloque
 #Escribir en archivo
-with open('./leer archivo/text.txt','w+') as file:
+with open('./read_documents/text.txt','w+') as file:
     for i in range(10,21):
         for line in file:
             print(line)
