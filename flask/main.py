@@ -2,6 +2,14 @@ from flask import Flask,make_response,redirect,request,render_template
 app=Flask(__name__)
 
 todos=['Comer','Dormir','Programar']
+@app.errorhandler(404)
+def not_found(error):
+    return render_template('404.html',error=error)
+
+@app.errorhandler(500)
+def didnt_completed(error):
+    return render_template('500.html',error=error)
+
 
 @app.route('/')
 def index():
