@@ -1,12 +1,15 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import functions.lineal_function as fl
-import functions.polynomial_function as fp
-import functions.trigonometric_function as ft
+from functions.lineal_function import f as fl
+from functions.polynomial_function import f as fp
+from functions.trigonometric_function import f as ftri
+from functions.trascendental_functions import f as ftra
+from functions.logarithmic_function import f as flog
+
 N=100
 x=np.linspace(-10,10,num=N)
 
-def Graph(x,y):
+def graph(x,y):
     plt.plot(x,y)
     plt.grid()
     plt.show()
